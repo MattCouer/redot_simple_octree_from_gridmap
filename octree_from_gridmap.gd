@@ -1,4 +1,5 @@
 @tool
+class_name octree_from_gridmap
 extends Node
 
 
