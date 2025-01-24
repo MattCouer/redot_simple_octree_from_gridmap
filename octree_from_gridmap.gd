@@ -4,6 +4,7 @@ extends Node
 
 
 class octree_part:
+	extends RefCounted
 	var children : Array[octree_part];
 	var octant_lower_bound : Vector3;
 	var octant_upper_bound : Vector3;
@@ -13,6 +14,7 @@ class octree_part:
 		octant_upper_bound = _upper_bound;
 
 class octree:
+	extends RefCounted
 	var root : octree_part;
 	
 	func _init(_root : octree_part):
